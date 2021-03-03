@@ -34,6 +34,7 @@ export const getStaticProps: GetStaticProps<Top10Props> = async (context) => {
     return {
         props: {
             products
-        }
+        },
+        revalidate: 5 //intervalo de tempo em segundos que a página vai ficar sem ser atualizada com os dados da API
     }
 }
